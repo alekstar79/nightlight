@@ -5,6 +5,7 @@ dist/
 # local env files
 .env.local
 .env.*.local
+src/link
 
 # Log files
 npm-debug.log*
