@@ -61,10 +61,7 @@ const config = {
       patterns: [
         path.resolve(__dirname, 'public', 'favicon.png')
       ]
-    }),
-    /* new webpack.DefinePlugin({
-      API_KEY: JSON.stringify(process.env.API_KEY)
-    }) */
+    })
   ],
   watchOptions: {
 	  ignored: ['**/node_modules']
@@ -110,11 +107,9 @@ module.exports = (env /* , argv */) => {
     case 'development':
       config.devtool = 'eval-source-map'
       config.mode = 'development'
-      // config.watch = true
       break;
     case 'production':
       config.mode = 'production'
-      // config.watch = false
       break
 
     default:
